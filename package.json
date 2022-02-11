@@ -35,5 +35,8 @@
     "testPathIgnorePatterns": [
       "dist"
     ]
+  },
+  "dependencies": {
+    "test": "^0.6.0"
   }
 }

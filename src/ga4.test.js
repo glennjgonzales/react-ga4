@@ -260,9 +260,9 @@ describe("GA4", () => {
       GA4.event(object);
 
       // Then
-      expect(gtag).toHaveBeenNthCalledWith(1, "event", "Action Value", {
-        event_category: "Category Value",
-        event_label: "Label Value",
+      expect(gtag).toHaveBeenNthCalledWith(1, "event", "action value", {
+        event_category: "category value",
+        event_label: "label value",
         non_interaction: true,
       });
     });
@@ -285,9 +285,9 @@ describe("GA4", () => {
       GA4.event(object);
 
       // Then
-      expect(gtag).toHaveBeenNthCalledWith(1, "event", "Action Value", {
-        event_category: "Category Value",
-        event_label: "Label Value",
+      expect(gtag).toHaveBeenNthCalledWith(1, "event", "action value", {
+        event_category: "category value",
+        event_label: "label value",
         non_interaction: true,
         dimension2: "dimension2 value",
         dimension4: "dimension4 value",
@@ -359,7 +359,7 @@ describe("GA4", () => {
       // Then
       expect(gtag).toHaveBeenNthCalledWith(1, "event", "Click", {
         event_category: "Outbound",
-        event_label: "Label Value",
+        event_label: "label value",
         event_callback: expect.any(Function),
       });
       expect(callback).toHaveBeenCalledTimes(0);
