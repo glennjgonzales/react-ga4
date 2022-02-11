@@ -45,7 +45,7 @@ function redactEmail(string) {
 
 export default function format(
   s = "",
-  titleCase = true,
+  titleCase = false,
   redactingEmail = true
 ) {
   let _str = s || "";
