@@ -1,2 +1,5 @@
+.DS_Store
+.eclipse
+.idea
+.iml
 node_modules
-dist
